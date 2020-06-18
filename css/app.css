@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    height: 100vh;
+    width: 5rem;
+    background: rgb(10, 10, 105);
+    transition: width 200ms ease;
+    z-index: 1;
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+  }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
+
+  #theme-switcher {
+      float: right;
+      margin: 20px;
+  }
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link,
+header {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    text-decoration: none;
+}
+
+.nav-item:last-child {
+    margin-top: 200px;
+}
+
+header {
+    height: 8rem;
+}
+
+header i {
+    font-size: 1.5rem;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 15rem;
+    height: 8rem;
+    overflow: hidden;
+    margin-left: -30px;
+    display: none;
+}
+
+.fa-bars {
+    cursor: pointer;
+}
+
+.nav-link i,
+header i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    color: #fff;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text,
+.navbar:hover header img {
+    display: block;
+}
+
+.link-text:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+    transform: translateX(30px);
+    border-radius: 10px 10px 10px 0;
+}
+div.container>h3{
+  margin-left: 50px;
+}
+div.row{
+  padding: 50px;
+}
+div.col>h3{
+  color:#5E5E5E;;
+}
+div.col>p{
+  color: rgba(94, 94, 94, 0.7);
+}
+
+div.col > button{
+  text-transform: capitalize;
+  font-weight: bold;
+  padding:20px;
+  background-color: white;
+  color:rgb(10, 10, 105);;
+  border:1px solid black;
+border-radius: 10px 15px 15px 0px;
+/* width: 323.11px; */
+}
+div.col>button:hover{
+ color:white;
+ background-color: rgb(10, 10, 105);
+}
+div.col>input{
+ padding:25px;
+ margin-top: 36px;
+border:1px solid #062863;
+ border-radius: 10px 15px 15px 0px;
+width: 258.49px;
+}
+
+div.col>input[type=number]{
+  color:rgb(10, 10, 105);
+  font-weight: bold;
+
+}
